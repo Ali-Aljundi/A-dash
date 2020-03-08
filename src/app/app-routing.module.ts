@@ -13,7 +13,7 @@ import { AuthGuard} from './auth-guard.service';
 const routes: Routes = [
     {
       path: 'pages',
-      canActivate:[AuthGuard],
+      //canActivate:[AuthGuard],
       loadChildren:'app/pages/pages.module#PagesModule'
     },
    {
@@ -46,7 +46,7 @@ const routes: Routes = [
       },
     ],
   },
-  { path: '', redirectTo: 'auth/login', pathMatch: 'full' },
+  { path: '', redirectTo: 'pages', pathMatch: 'full' },
   { path: '**', redirectTo: 'pages' },
 ];
 
