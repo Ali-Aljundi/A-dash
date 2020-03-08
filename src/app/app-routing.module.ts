@@ -9,7 +9,7 @@ import {
   NbResetPasswordComponent,
 } from '@nebular/auth';
 import { AuthGuard} from './auth-guard.service';
-//console.log(AuthGuard)
+console.log(AuthGuard)
 const routes: Routes = [
     {
       path: 'pages',
